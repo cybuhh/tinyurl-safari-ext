@@ -127,7 +127,11 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/_locales,
+				Resources/api.js,
 				Resources/background.js,
+				Resources/browser.js,
+				Resources/buttonsHandlers.js,
+				Resources/consts.js,
 				Resources/content.js,
 				Resources/images,
 				Resources/manifest.json,
@@ -136,6 +140,7 @@
 				Resources/popup.css,
 				Resources/popup.html,
 				Resources/popup.js,
+				Resources/ui.js,
 				SafariWebExtensionHandler.swift,
 			);
 			target = 7133D5EC2F346C8400CA0958 /* tinurl Extension (macOS) */;
