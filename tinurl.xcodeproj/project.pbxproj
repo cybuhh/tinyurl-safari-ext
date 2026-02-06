@@ -77,6 +77,7 @@
 				Resources/popup/consts.js,
 				Resources/popup/content.js,
 				Resources/popup/ui.js,
+				Resources/storage.js,
 				SafariWebExtensionHandler.swift,
 			);
 			target = 7133D5EC2F346C8400CA0958 /* tinurl Extension (macOS) */;

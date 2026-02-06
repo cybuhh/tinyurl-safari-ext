@@ -1,15 +1,6 @@
-const getApiToken = () => new Promise((resolve) => {
-  chrome.storage.local.get("settings", ({ settings = {} }) => {
-    resolve(settings.apiToken || "");
-  });
-});
+import { getApiToken } from './storage.js';
 
 export async function shortenUrl({ url, alias, description }) {
-//  return new Promise((resolve, reject) => {
-    // reject(new Error("foo"));
-//    setTimeout(() => resolve("foo"), 1500);
-//  });
-
   const apiToken = await getApiToken();
   const payload = {
     url,
