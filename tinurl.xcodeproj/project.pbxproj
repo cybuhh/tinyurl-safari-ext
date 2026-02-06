@@ -7,18 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7133D5E42F346C8400CA0958 /* tinurl Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7133D5E32F346C8400CA0958 /* tinurl Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7133D5EE2F346C8400CA0958 /* tinurl Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7133D5ED2F346C8400CA0958 /* tinurl Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7133D5E52F346C8400CA0958 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7133D5AA2F346C8200CA0958 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7133D5E22F346C8400CA0958;
-			remoteInfo = "tinurl Extension (iOS)";
-		};
 		7133D5EF2F346C8400CA0958 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7133D5AA2F346C8200CA0958 /* Project object */;
@@ -29,17 +21,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7133D6162F346C8400CA0958 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				7133D5E42F346C8400CA0958 /* tinurl Extension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7133D6202F346C8400CA0958 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,39 +35,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7133D5C62F346C8400CA0958 /* tinurl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinurl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7133D5D82F346C8400CA0958 /* tinurl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinurl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7133D5E32F346C8400CA0958 /* tinurl Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "tinurl Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7133D5ED2F346C8400CA0958 /* tinurl Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "tinurl Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7133D6112F346C8400CA0958 /* Exceptions for "Shared (App)" folder in "tinurl (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"/Localized: Resources/Main.html",
-				Assets.xcassets,
-				Resources/Icon.png,
-				Resources/Script.js,
-				Resources/Style.css,
-				ViewController.swift,
-			);
-			target = 7133D5C52F346C8400CA0958 /* tinurl (iOS) */;
-		};
-		7133D6152F346C8400CA0958 /* Exceptions for "iOS (Extension)" folder in "tinurl Extension (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 7133D5E22F346C8400CA0958 /* tinurl Extension (iOS) */;
-		};
-		7133D61A2F346C8400CA0958 /* Exceptions for "iOS (App)" folder in "tinurl (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 7133D5C52F346C8400CA0958 /* tinurl (iOS) */;
-		};
 		7133D61B2F346C8400CA0958 /* Exceptions for "Shared (App)" folder in "tinurl (macOS)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -106,33 +59,11 @@
 			);
 			target = 7133D5EC2F346C8400CA0958 /* tinurl Extension (macOS) */;
 		};
-		7133D6242F346C8400CA0958 /* Exceptions for "Shared (Extension)" folder in "tinurl Extension (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Resources/_locales,
-				Resources/background.js,
-				Resources/content.js,
-				Resources/images,
-				Resources/manifest.json,
-				Resources/options.html,
-				Resources/options.js,
-				Resources/popup.css,
-				Resources/popup.html,
-				Resources/popup.js,
-				SafariWebExtensionHandler.swift,
-			);
-			target = 7133D5E22F346C8400CA0958 /* tinurl Extension (iOS) */;
-		};
 		7133D6252F346C8400CA0958 /* Exceptions for "Shared (Extension)" folder in "tinurl Extension (macOS)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/_locales,
-				Resources/api.js,
 				Resources/background.js,
-				Resources/browser.js,
-				Resources/buttonsHandlers.js,
-				Resources/consts.js,
-				Resources/content.js,
 				Resources/images,
 				Resources/manifest.json,
 				Resources/options.html,
@@ -140,18 +71,15 @@
 				Resources/popup.css,
 				Resources/popup.html,
 				Resources/popup.js,
-				Resources/ui.js,
+				Resources/popup/api.js,
+				Resources/popup/browser.js,
+				Resources/popup/buttonsHandlers.js,
+				Resources/popup/consts.js,
+				Resources/popup/content.js,
+				Resources/popup/ui.js,
 				SafariWebExtensionHandler.swift,
 			);
 			target = 7133D5EC2F346C8400CA0958 /* tinurl Extension (macOS) */;
-		};
-		7133D6872F34A53700CA0958 /* Exceptions for "Shared (Extension)" folder in "tinurl (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Resources/options.html,
-				Resources/options.js,
-			);
-			target = 7133D5C52F346C8400CA0958 /* tinurl (iOS) */;
 		};
 		7133D6882F34A53700CA0958 /* Exceptions for "Shared (Extension)" folder in "tinurl (macOS)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -167,7 +95,6 @@
 		7133D5AE2F346C8200CA0958 /* Shared (App) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				7133D6112F346C8400CA0958 /* Exceptions for "Shared (App)" folder in "tinurl (iOS)" target */,
 				7133D61B2F346C8400CA0958 /* Exceptions for "Shared (App)" folder in "tinurl (macOS)" target */,
 			);
 			path = "Shared (App)";
@@ -176,9 +103,7 @@
 		7133D5B72F346C8400CA0958 /* Shared (Extension) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				7133D6872F34A53700CA0958 /* Exceptions for "Shared (Extension)" folder in "tinurl (iOS)" target */,
 				7133D6882F34A53700CA0958 /* Exceptions for "Shared (Extension)" folder in "tinurl (macOS)" target */,
-				7133D6242F346C8400CA0958 /* Exceptions for "Shared (Extension)" folder in "tinurl Extension (iOS)" target */,
 				7133D6252F346C8400CA0958 /* Exceptions for "Shared (Extension)" folder in "tinurl Extension (macOS)" target */,
 			);
 			explicitFolders = (
@@ -190,9 +115,6 @@
 		};
 		7133D5C82F346C8400CA0958 /* iOS (App) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7133D61A2F346C8400CA0958 /* Exceptions for "iOS (App)" folder in "tinurl (iOS)" target */,
-			);
 			path = "iOS (App)";
 			sourceTree = "<group>";
 		};
@@ -203,9 +125,6 @@
 		};
 		7133D5E72F346C8400CA0958 /* iOS (Extension) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7133D6152F346C8400CA0958 /* Exceptions for "iOS (Extension)" folder in "tinurl Extension (iOS)" target */,
-			);
 			path = "iOS (Extension)";
 			sourceTree = "<group>";
 		};
@@ -220,21 +139,7 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7133D5C32F346C8400CA0958 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7133D5D52F346C8400CA0958 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7133D5E02F346C8400CA0958 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,9 +172,7 @@
 		7133D5C72F346C8400CA0958 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7133D5C62F346C8400CA0958 /* tinurl.app */,
 				7133D5D82F346C8400CA0958 /* tinurl.app */,
-				7133D5E32F346C8400CA0958 /* tinurl Extension.appex */,
 				7133D5ED2F346C8400CA0958 /* tinurl Extension.appex */,
 			);
 			name = Products;
@@ -278,30 +181,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7133D5C52F346C8400CA0958 /* tinurl (iOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7133D6172F346C8400CA0958 /* Build configuration list for PBXNativeTarget "tinurl (iOS)" */;
-			buildPhases = (
-				7133D5C22F346C8400CA0958 /* Sources */,
-				7133D5C32F346C8400CA0958 /* Frameworks */,
-				7133D5C42F346C8400CA0958 /* Resources */,
-				7133D6162F346C8400CA0958 /* Embed Foundation Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7133D5E62F346C8400CA0958 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				7133D5C82F346C8400CA0958 /* iOS (App) */,
-			);
-			name = "tinurl (iOS)";
-			packageProductDependencies = (
-			);
-			productName = "tinurl (iOS)";
-			productReference = 7133D5C62F346C8400CA0958 /* tinurl.app */;
-			productType = "com.apple.product-type.application";
-		};
 		7133D5D72F346C8400CA0958 /* tinurl (macOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7133D6212F346C8400CA0958 /* Build configuration list for PBXNativeTarget "tinurl (macOS)" */;
@@ -325,28 +204,6 @@
 			productName = "tinurl (macOS)";
 			productReference = 7133D5D82F346C8400CA0958 /* tinurl.app */;
 			productType = "com.apple.product-type.application";
-		};
-		7133D5E22F346C8400CA0958 /* tinurl Extension (iOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7133D6122F346C8400CA0958 /* Build configuration list for PBXNativeTarget "tinurl Extension (iOS)" */;
-			buildPhases = (
-				7133D5DF2F346C8400CA0958 /* Sources */,
-				7133D5E02F346C8400CA0958 /* Frameworks */,
-				7133D5E12F346C8400CA0958 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				7133D5E72F346C8400CA0958 /* iOS (Extension) */,
-			);
-			name = "tinurl Extension (iOS)";
-			packageProductDependencies = (
-			);
-			productName = "tinurl Extension (iOS)";
-			productReference = 7133D5E32F346C8400CA0958 /* tinurl Extension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		7133D5EC2F346C8400CA0958 /* tinurl Extension (macOS) */ = {
 			isa = PBXNativeTarget;
@@ -380,13 +237,7 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					7133D5C52F346C8400CA0958 = {
-						CreatedOnToolsVersion = 26.2;
-					};
 					7133D5D72F346C8400CA0958 = {
-						CreatedOnToolsVersion = 26.2;
-					};
-					7133D5E22F346C8400CA0958 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 					7133D5EC2F346C8400CA0958 = {
@@ -408,30 +259,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7133D5C52F346C8400CA0958 /* tinurl (iOS) */,
 				7133D5D72F346C8400CA0958 /* tinurl (macOS) */,
-				7133D5E22F346C8400CA0958 /* tinurl Extension (iOS) */,
 				7133D5EC2F346C8400CA0958 /* tinurl Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7133D5C42F346C8400CA0958 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7133D5D62F346C8400CA0958 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7133D5E12F346C8400CA0958 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -448,21 +283,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7133D5C22F346C8400CA0958 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7133D5D42F346C8400CA0958 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7133D5DF2F346C8400CA0958 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -479,11 +300,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7133D5E62F346C8400CA0958 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7133D5E22F346C8400CA0958 /* tinurl Extension (iOS) */;
-			targetProxy = 7133D5E52F346C8400CA0958 /* PBXContainerItemProxy */;
-		};
 		7133D5F02F346C8400CA0958 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7133D5EC2F346C8400CA0958 /* tinurl Extension (macOS) */;
@@ -492,158 +308,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		7133D6132F346C8400CA0958 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4YRZ35QTHW;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "tinurl Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cybidev.tinurl.Extension;
-				PRODUCT_NAME = "tinurl Extension";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7133D6142F346C8400CA0958 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4YRZ35QTHW;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "tinurl Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cybidev.tinurl.Extension;
-				PRODUCT_NAME = "tinurl Extension";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7133D6182F346C8400CA0958 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4YRZ35QTHW;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = tinurl;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cybidev.tinurl;
-				PRODUCT_NAME = tinurl;
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7133D6192F346C8400CA0958 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4YRZ35QTHW;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = tinurl;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cybidev.tinurl;
-				PRODUCT_NAME = tinurl;
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		7133D61D2F346C8400CA0958 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -924,24 +588,6 @@
 			buildConfigurations = (
 				7133D6262F346C8400CA0958 /* Debug */,
 				7133D6272F346C8400CA0958 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7133D6122F346C8400CA0958 /* Build configuration list for PBXNativeTarget "tinurl Extension (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7133D6132F346C8400CA0958 /* Debug */,
-				7133D6142F346C8400CA0958 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7133D6172F346C8400CA0958 /* Build configuration list for PBXNativeTarget "tinurl (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7133D6182F346C8400CA0958 /* Debug */,
-				7133D6192F346C8400CA0958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

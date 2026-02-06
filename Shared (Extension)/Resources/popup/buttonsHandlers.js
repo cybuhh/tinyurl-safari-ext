@@ -36,6 +36,9 @@ export async function handleCopyButton() {
   deleyedResetCopyButton();
 }
 
-export async function handleClearButton() {
-  descriptionInput.value = "";
+export async function handleClearButton(ev) {
+  ev.target
+    .closest(".popup__fieldset")
+    .querySelector(".popup__input")
+    .value = "";
 }

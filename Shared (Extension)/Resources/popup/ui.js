@@ -20,6 +20,6 @@ export function deleyedResetCopyButton() {
 export const descriptionInput = document.getElementById("descriptionInput");
 export const createButton = document.getElementById("createButton");
 export const copyButton = document.getElementById("copyButton");
-export const clearButton = document.getElementById("clearButton");
+export const clearButtons = document.querySelectorAll('[data-action=clear]');
 export const shortUrlInput = document.getElementById("shortUrl");
 export const aliasInput = document.getElementById("aliasInput");
