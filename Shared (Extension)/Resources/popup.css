@@ -1,121 +1,68 @@
 :root {
-  color-scheme: light dark;
-  --icon-border-width: 0.12rem;
-  --icon-border-radius: 0.1rem;
+  background: #f7f7f7;
 }
 
-body {
-  padding: 10px;
-
-  font-family: system-ui;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: dark) {
-    /* Dark Mode styles go here. */
-}
-
-.actionButton {
-  background: none;
-  border: 1px solid #3b4351;
+.popup__container {
   padding: 5px;
+  width: 300px;
+  gap: 10px;
   display: flex;
+  flex-direction: column;
+}
+
+.button {
+  border-radius: 10px;
+  border: none;
+  background: #5892e8;
+  &:hover {
+    background: #4877be;
+  }
+  &:active {
+    background: #5892e8;
+  }
+}
+
+.button--wide {
+  font-size: 30px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
   align-items: center;
-  
-  &:active{
-    opacity: 0.80;
-  }
+  justify-content: center;
 }
 
-/** https://cssloaders.github.io */
-.loader {
-  width: 18px;
-  height: 18px;
-  border: 2px solid #000;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+.button--small {
+  font-size: 20px;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/** https://picturepan2.github.io/icons.css/ */
-.icon {
-  color: #3b4351;
-  box-sizing: border-box;
-  display: inline-block;
+.button__label {
   font-size: 16px;
-  font-style: normal;
-  height: 1em;
-  position: relative;
-  text-indent: -9999px;
-  vertical-align: middle;
-  width: 1em;
-  &::after,
-  &::before {
-    content: "";
-    display: block;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+  color: #fff;
 }
 
-.icon-copy {
-  &::before {
-    border: var(--icon-border-width) solid currentcolor;
-    border-radius: var(--icon-border-radius);
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    height: 0.8em;
-    left: 40%;
-    top: 40%;
-    width: 0.7em;
-  }
-  &::after {
-    border: var(--icon-border-width) solid currentcolor;
-    border-radius: var(--icon-border-radius);
-    height: 0.8em;
-    left: 60%;
-    top: 60%;
-    width: 0.7em;
-  }
+/* https://color.adobe.com/create/color-wheel */
+.button__icon {
+  color: #fff;
 }
 
-.icon-close {
-  &::before,
-  &::after {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  &::before {
-    background: currentcolor;
-    height: var(--icon-border-width);
-    width: 100%;
-  }
-  &::after {
-    background: currentcolor;
-    height: 100%;
-    width: var(--icon-border-width);
-  }
+.popup__legend {
+  color: #302b3d;
+  font-size: 14px;
 }
 
-.icon-check {
-  &::before {
-    border: var(--icon-border-width) solid currentColor;
-    border-right: 0;
-    border-top: 0;
-    height: 0.5em;
-    width: 0.9em;
-    transform: translate(-50%, -0.375em) rotate(-45deg);
-  }
+.popup__input {
+  height: 26px;
+  padding: 0 7px;
+  flex-grow: 1;
+  border: 1px solid #5892e8;
+  border-radius: 4px;
+}
+
+.popup__fieldset {
+  border: none;
+  display: flex;
+  padding: 0;
+  gap: 8px;
+  justify-content: flex-end;
 }

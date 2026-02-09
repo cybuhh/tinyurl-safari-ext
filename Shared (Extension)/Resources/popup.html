@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="popup.css">
-    <script type="module" src="popup.js"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css" integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css" integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-  <button id="actionButton" class="actionButton">
-    <span id="icon" class="loader"></span>
-  </button>
+  <main class="popup__container">
+    <fieldset class="popup__fieldset">
+      <legend class="popup__legend">short url</legend>
+      <input type="text" id="shortUrl" class="popup__input" />
+      <button id="copyButton" class="button button--small">
+        <i class="button__icon fa-xs fa-solid fa-copy" id="copyButtonIcon"></i>
+      </button>
+    </fieldset>
+    <fieldset class="popup__fieldset">
+      <legend class="popup__legend">alias</legend>
+      <input type="text" id="aliasInput" class="popup__input" />
+      <button class="button button--small" data-action="clear">
+        <i class="button__icon fa-xs fa-solid fa-broom"></i>
+      </button>
+    </fieldset>
+    <fieldset class="popup__fieldset">
+      <legend class="popup__legend">description</legend>
+      <input type="text" id="descriptionInput" class="popup__input" />
+      <button class="button button--small" data-action="clear">
+        <i class="button__icon fa-xs fa-solid fa-broom"></i>
+      </button>
+    </fieldset>
+    <button id="createButton" class="button button--wide">
+      <span class="button__label">create</span>
+      <i class="button__icon fa-xs fa-solid fa-floppy-disk" id="generateButtonIcon"></i>
+    </button>
+  </main>
 </body>
 </html>
