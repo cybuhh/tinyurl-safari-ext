@@ -31,7 +31,7 @@ export async function handleCreateButton() {
 }
 
 export async function handleCopyButton() {
-  navigator.clipboard.writeText(shortUrl);
+  navigator.clipboard.writeText(shortUrlInput.value);
   setCopyButtonIcon(ICONS.copied);
   deleyedResetCopyButton();
 }
